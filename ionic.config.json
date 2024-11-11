@@ -1,0 +1,7 @@
+{
+  "name": "the-mouselets-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
