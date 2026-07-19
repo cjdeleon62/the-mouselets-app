@@ -1,16 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text } from "react-native";
-import { TamaguiProvider, View, createTamagui } from "@tamagui/core";
-import { defaultConfig } from "@tamagui/config/v5";
-
-const config = createTamagui(defaultConfig);
-
-type Conf = typeof config;
-
-// make imports typed
-declare module "@tamagui/core" {
-  interface TamaguiCustomConfig extends Conf {}
-}
+import { TamaguiProvider, View } from "tamagui";
+import { config } from "@/tamagui.config";
 
 export default function App() {
   return (
